@@ -53,10 +53,24 @@ cor(ARM~SIMS,data=data)
 
 ### Inferential  (Build model.1)
 
+```{r}
+model.1 <- lm(SIMS~ARM,data=data)
+summary.lm(model.1)
+```
+
 #### Predict at target point
+```{r}
+value = 88 * 0.054563 - 4.095160
+print ("The value is, ")
+print (value)
+```
 
 
 #### scatterplot with model fit
+  
+```{r}
+basicNN + geom_point() + geom_smooth(method=lm)
+``` 
   
 
 ## Model 2 SIM~GRIP
