@@ -87,6 +87,11 @@ basicNN + geom_point() + geom_smooth(method=lm)
 
 ### Now add in scatterplot
 
+```{r}
+plot(SIMS~GRIP,data=data)
+```
+
+The scatterplot for model 2 seems to be going towards uphill to the right, meaning it has a positive correlation.
 
 ### Numerical results 
 
