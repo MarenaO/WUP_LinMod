@@ -162,11 +162,28 @@ value = 0.037311 * 0.024470 - 5.433871
 print ("The value is, ")
 print (value)
 ```
+```{r}
+predict(model.2,newdata,interval="prediction")
+```
 
 ## Comparing nested models ANOVA Test
 
 ### Model.1 vs Model.3
+
+```{r}
+anova(model.1,model.3)
+```
+
 ### Model.2 vs Model.3
+
+```{r}
+anova(model.2,model.3)
+```
 
 ## Informally compare Model.1 with model.2
 
+```{r}
+anova(model.1,model.2)
+```
+
+This shows that the model with ARM (model 1) is better than the model with GRIP (model 2) and the Residual Sum of Squares went down by 25.
