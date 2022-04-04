@@ -174,11 +174,14 @@ predict(model.2,newdata,interval="prediction")
 anova(model.1,model.3)
 ```
 
+The results for model 1 vs model 3 show that there was a low p-value and that this is a significant result. Also, the error was reduced by about 30.
+
 ### Model.2 vs Model.3
 
 ```{r}
 anova(model.2,model.3)
 ```
+The results for model 2 vs model 3 show that there was an even lower p-value and that this is a significant result. Also, the error was reduced by about 50 this time.
 
 ## Informally compare Model.1 with model.2
 
