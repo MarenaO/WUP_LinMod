@@ -183,6 +183,8 @@ anova(model.2,model.3)
 ```
 The results for model 2 vs model 3 show that there was an even lower p-value and that this is a significant result. Also, the error was reduced by about 50 this time.
 
+Both of these results show that the better model was the one that used both ARM and GRIP (model 3).
+
 ## Informally compare Model.1 with model.2
 
 ```{r}
