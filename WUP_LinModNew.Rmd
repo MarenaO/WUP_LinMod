@@ -148,8 +148,20 @@ cor(SIMS~ARM+GRIP,data=data)
   
 ### Inferential  (Build 2-dimentional model.3)
 
+```{r}
+model.3 <- lm(SIMS~ARM+GRIP,data=data)
+summary.lm(model.3)
+```
+
+Model 3 seems to be the best model since its residual standard error is the smallest out of the other models, and the smaller it is the better model it is. It also has the greatest adjusted R-squared value out of the other models, and the biggest adjusted R-squared value means that is the better model.
+
 #### predict model.3 at target point
   
+```{r}
+value = 0.037311 * 0.024470 - 5.433871
+print ("The value is, ")
+print (value)
+```
 
 ## Comparing nested models ANOVA Test
 
